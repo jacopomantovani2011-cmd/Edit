@@ -37,3 +37,17 @@ Più dura e più cinematografica, ~15s, nessuna scritta:
 ```bash
 python3 edit/render_v2.py out/edit_v2.mp4
 ```
+
+## Versione 3 – [`out/edit_v3.mp4`](out/edit_v3.mp4)
+Costruita seguendo le regole dei tutorial di edit auto/moto (CapCut, After Effects):
+- **struttura**: build con 2 inquadrature lunghe (4 battiti), la clip più forte esattamente sul drop, poi un taglio ogni 2 battiti, raffica di 4 tagli su ogni battito (solo inquadrature larghe e leggibili), chiusura in slow-mo
+- **speed ramp solo su 3 clip** (drop, metà, finale) con curva normale → lento → veloce
+- **shake + flash solo sui 3 colpi forti**: shake che si spegne in ~20 fotogrammi a ~15 Hz con motion blur, alla S_Shake
+- **una transizione per cambio di sezione** (zoom nel drop, whip nella raffica); tutto il resto sono tagli secchi a tempo
+- **motion blur vero** (fusione dei fotogrammi) quando il video va più veloce del reale
+- **colore pulito**: +15% contrasto, alte luci abbassate, ombre leggermente sollevate, colori della moto che risaltano
+- **60 fps**, 1080×1920, ~16 Mbps
+
+```bash
+python3 edit/render_v3.py out/edit_v3.mp4
+```
