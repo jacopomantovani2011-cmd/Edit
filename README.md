@@ -51,3 +51,16 @@ Costruita seguendo le regole dei tutorial di edit auto/moto (CapCut, After Effec
 ```bash
 python3 edit/render_v3.py out/edit_v3.mp4
 ```
+
+## Versione 4 – [`out/edit_v4.mp4`](out/edit_v4.mp4)
+Stessa struttura della v3, con lo stile moto che va di più adesso su TikTok:
+- **transizioni glitch** brevissime (~4 fotogrammi) all'inizio delle clip dopo il drop
+- **colori desaturati e freddi, contrasto forte**, solo il rosso della moto resta acceso
+- **movimenti di camera a tempo**: lo zoom avanza a scatti, uno a ogni battito
+- **scale bounce 100% → 115% → 100%** sui colpi forti
+- speed ramp con il **punto più lento esattamente sul beat**
+- 60 fps, ~21 Mbps
+
+```bash
+python3 edit/render_v4.py out/edit_v4.mp4
+```
