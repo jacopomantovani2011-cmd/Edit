@@ -24,3 +24,16 @@ python3 edit/render.py out/edit.mp4                 # --preview per una prova ve
 - `edit/render.py` – lista degli shot (`SHOTS`), titoli (`TITLES`), effetti e color grading
 
 Font: Anton (SIL Open Font License).
+
+## Versione 2 – [`out/edit_v2.mp4`](out/edit_v2.mp4)
+Più dura e più cinematografica, ~15s, nessuna scritta:
+- parte subito sul colpo (niente intro lenta) e finisce sulla stessa inquadratura dell'inizio, così il video va in loop
+- base funk/phonk a 135 BPM con 808 distorto, campane FM e clap (`edit/music_v2.py`)
+- tagli su cassa e clap, nel secondo drop anche a mezzo battito
+- grading freddo con contrasto alto e bagliore sulle luci del distributore
+- pausa a metà: slow-mo con bande cinema, tutto in bianco e nero tranne il rosso, poi silenzio e secondo drop
+- transizioni: zoom, whip verticale, stacco al nero, glitch, effetto scattoso a fotogrammi
+
+```bash
+python3 edit/render_v2.py out/edit_v2.mp4
+```
